@@ -1,0 +1,10 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Roboto', 'Arial';
+}
+
+textarea{
+    width: 100%;
+    min-height: 600px;
+}
