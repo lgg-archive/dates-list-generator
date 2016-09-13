@@ -1,0 +1,22 @@
+{
+  "name": "dates-list-generator",
+  "version": "1.0.0",
+  "description": "Generate dates list from date to date, excluding certain days(e.g. holidays)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgg/dates-list-generator.git"
+  },
+  "author": "lgg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgg/dates-list-generator/issues"
+  },
+  "homepage": "https://github.com/lgg/dates-list-generator#readme",
+  "devDependencies": {
+    "pug": "^2.0.0-beta6"
+  }
+}
