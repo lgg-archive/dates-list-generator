@@ -17,7 +17,7 @@ function bindControls(el) {
         table_ld = g('days-study'),
         table_hs = g('days-holidays'),
         table_hd = g('days-holiday'),
-        delimiter = g('delimiter').value,
+        delimiter = g('delimiter'),
         due = g('due-date');
 
     //add learning dates input
@@ -62,7 +62,7 @@ function bindControls(el) {
             }
 
             //get delimiter for result days
-            printDays(el, removeHolidays(days, holidays), delimiter);
+            printDays(el, removeHolidays(days, holidays), delimiter.value);
         });
     });
 }
