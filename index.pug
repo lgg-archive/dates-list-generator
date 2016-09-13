@@ -4,12 +4,37 @@ html(lang='ru')
         meta(charset='UTF-8')
         title dates-list-generator
         script(src='js.js')
+        link(rel="stylesheet", href="style.css")
     body
+        h2 Генератор дат занятий с учетом праздников
         div#input
+            h3 До какой даты генерировать
+            input#due-date(type="text", placeholder="дд-мм-гг")
+
+            h3 Разделитель для дат на выводе
+            input#delimiter(type="text", value=".")
+
             h3 Дни занятий
-            table
+            table#days-study
                 tr
-                    td 
                     td
+                        input#add-learning-date(type="submit", value="Добавить день занятий")
+
+            h3 Каникулы/Праздники [от и до]
+            table#days-holidays
                 tr
+                    td
+                        input#add-holidays(type="submit", value="Добавить период праздников")
+                    td
+
+            h3 Праздники [один день]
+            table#days-holiday
                 tr
+                    td
+                        input#add-holiday(type="submit", value="Добавить праздник")
+
+            h3 Результат
+            div
+                input#generate(type="submit", value="Получить список дат")
+                div
+                    textarea#result
