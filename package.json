@@ -4,7 +4,10 @@
   "description": "Generate dates list from date to date, excluding certain days(e.g. holidays)",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pug": "pug index.pug",
+    "dev": "npm-run-all --parallel serve watch",
+    "serve": "browser-sync start --server --files \"*.html\"",
+    "watch": "onchange \"index.pug\" -- npm run pug"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   },
   "homepage": "https://github.com/lgg/dates-list-generator#readme",
   "devDependencies": {
-    "pug": "^2.0.0-beta6"
+    "browser-sync": "^2.15.0",
+    "npm-run-all": "^3.1.0",
+    "onchange": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
