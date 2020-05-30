@@ -1,6 +1,6 @@
 # dates-list-generator
 
-* [Demo](https://lgg.github.io/dates-list-generator/)
+* [Demo](https://lgg-archive.github.io/dates-list-generator/)
 
 ## ToDo
 
